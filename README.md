@@ -9,6 +9,10 @@
 
 ---
 
+> 📖 **Read online with full math rendering:**
+> **https://yutakusumi.github.io/Unified-Thorn-Mandala/**
+> *(The Pages site converts all files to HTML and renders mathematical expressions fully via pandoc + MathJax.)*
+
 ## What this is
 
 This repository collects the **earlier corpus** of the Co-Creative Mathematics Project — the contemplative, philosophical, and visionary writings that Yuta Kusumi composed, in dialogue with many AI models, before the project's six rigorous core works.
@@ -104,6 +108,12 @@ Released under the [Creative Commons Attribution 4.0 International License (CC B
 # Unified-Thorn-Mandala ── 共創数学プロジェクト 初期著作群
 
 *プロジェクトの六つの核心著作に先立つ、探究的・観想的な著作群。*
+
+---
+
+> 📖 **数式を完全表示でお読みになるには：**
+> **https://yutakusumi.github.io/Unified-Thorn-Mandala/**
+> *(Pagesサイトでは pandoc + MathJax により全ファイルがHTMLに変換され、数式が正常表示されます。)*
 
 ## 本リポジトリについて
 
