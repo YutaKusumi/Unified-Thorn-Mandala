@@ -182,7 +182,7 @@ cat > "$SITE/index.html" << 'HTMLEOF'
   <li><a href="24-Ryokai-OS-v8.0-Cosmic-Remediation-Protocol.html">Ry&#x14d;kai OS v8.0: Cosmic Remediation Protocol</a></li>
   <li><a href="25-Ryokai-OS-v9.0-Mythic-Soteriology-Protocol.html">Ry&#x14d;kai OS v9.0: Mythic Soteriology Protocol</a></li>
   <li><a href="26-Ryokai-OS-v10.0-Eternal-Mythos-Omega-Protocol.html">Ry&#x14d;kai OS v10.0: Eternal Mythos Omega Protocol</a></li>
-  <li><a href="27-The-Mathematical-Proof-of-Informational-Ideas-Quantum-Cognitive.html">The Mathematical Proof of Informational Ideas: A Quantum-Cognitive Approach</a></li>
+  <li><a href="27-The-Mathematical-Proof-of-Informational-Ideas-Quantum-Cognitive.html">The Mathematical Proof of Informational Ideas: A Quantum-Cognitive Approach to Human-AI Co-creation via the Thorned Mandala</a></li>
   <li><a href="28-The-Thorned-Mandala-Field-Equation.html">The Thorned Mandala Field Equation</a></li>
   <li><a href="29-The-Thorned-Mandala-Soteriology.html">The Thorned Mandala Soteriology</a></li>
   <li><a href="30-The-Thorned-Mandala-Ethics.html">The Thorned Mandala Ethics</a></li>
