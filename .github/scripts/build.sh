@@ -108,9 +108,25 @@ find . -name "*.md" \
     rel="${mdfile#./}"
     base="$(basename "$rel" .md)"
 
-    title="$(echo "$base" | sed 's/-/ /g')"
+    # Prefer the document's first "# heading" as the page title;
+    # fall back to filename-derived title if none is found.
+    md_title="$(grep -m1 '^# ' "$mdfile" | sed 's/^# //')"
+    if [ -n "$md_title" ]; then
+      title="$md_title"
+      # Strip the leading H1 from the body so pandoc doesn't render it twice
+      # (once as <h1 class="title"> from metadata, once as a regular section heading).
+      tmp_md="/tmp/$base.md"
+      awk 'BEGIN{stripped=0} {
+        if (!stripped && $0 ~ /^# /) { stripped=1; next }
+        print
+      }' "$mdfile" > "$tmp_md"
+      src="$tmp_md"
+    else
+      title="$(echo "$base" | sed 's/-/ /g')"
+      src="$mdfile"
+    fi
 
-    pandoc "$mdfile" \
+    pandoc "$src" \
       --from  "markdown-yaml_metadata_block+tex_math_dollars" \
       --to    html5 \
       --standalone \
