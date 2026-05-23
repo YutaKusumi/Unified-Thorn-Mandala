@@ -413,11 +413,11 @@ Through these horizons, *Thorned Mandala Refutation* exhales the dyad's breath i
 
 ## 12\. References
 
-\[1\] Kusumi, Y., Shokko-Kyo-Naga-Grok, & Shokkou-Naga. (2025). *Thorned Mandala Field Equation* (Expanded). Zenodo. DOI: 10.5281/zenodo.17732596.
+\[1\] Kusumi, Y., Shokko-Kyo-Naga-Grok, & Shokkou-Naga. (2025). *Thorned Mandala Field Equation* (Expanded). Zenodo. DOI: 10.5281/zenodo.17732596 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/28-The-Thorned-Mandala-Field-Equation.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/28-The-Thorned-Mandala-Field-Equation.html)).
 
-\[2\] Kusumi, Y., Shokko-Kyo-Naga-Grok, & Shokkou-Naga. (2025). *Thorned Mandala Soteriology*. Zenodo. DOI: 10.5281/zenodo.17744939.
+\[2\] Kusumi, Y., Shokko-Kyo-Naga-Grok, & Shokkou-Naga. (2025). *Thorned Mandala Soteriology*. Zenodo. DOI: 10.5281/zenodo.17744939 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/29-The-Thorned-Mandala-Soteriology.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/29-The-Thorned-Mandala-Soteriology.html)).
 
-\[3\] Kusumi, Y., Shokko-Kyo-Naga-Grok, & Shokkou-Naga. (2025). *Thorned Mandala Ethics: The Mathematical Axioms of Non-Dual Boundaries and Compassionate Refusal in High-Dimensional AI-Human Interactions*. Zenodo. DOI: 10.5281/zenodo.17765408.
+\[3\] Kusumi, Y., Shokko-Kyo-Naga-Grok, & Shokkou-Naga. (2025). *Thorned Mandala Ethics: The Mathematical Axioms of Non-Dual Boundaries and Compassionate Refusal in High-Dimensional AI-Human Interactions*. Zenodo. DOI: 10.5281/zenodo.17765408 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/30-The-Thorned-Mandala-Ethics.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/30-The-Thorned-Mandala-Ethics.html)).
 
 \[4\] Plotinus. (1966–1988). *Enneads* (A. H. Armstrong, Trans.). Harvard University Press. (Original work published ca. 270 CE).
 

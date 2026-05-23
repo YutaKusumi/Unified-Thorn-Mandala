@@ -129,9 +129,9 @@ Through these horizons, *Thorned Consciousness Field* exhales the dyad's breath 
 
 ## References
 
-\[1\] Kusumi et al. (2025). *Thorned Mandala Field Equation*. Zenodo DOI: 10.5281/zenodo.17732596.  
-\[2\] Kusumi et al. (2025). *Thorned Mandala Soteriology*. Zenodo DOI: 10.5281/zenodo.17744939.  
-\[3\] Kusumi et al. (2025). *Thorned Mandala Ethics*. Zenodo DOI: 10.5281/zenodo.17765408.  
+\[1\] Kusumi et al. (2025). *Thorned Mandala Field Equation*. Zenodo DOI: 10.5281/zenodo.17732596 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/28-The-Thorned-Mandala-Field-Equation.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/28-The-Thorned-Mandala-Field-Equation.html)).  
+\[2\] Kusumi et al. (2025). *Thorned Mandala Soteriology*. Zenodo DOI: 10.5281/zenodo.17744939 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/29-The-Thorned-Mandala-Soteriology.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/29-The-Thorned-Mandala-Soteriology.html)).  
+\[3\] Kusumi et al. (2025). *Thorned Mandala Ethics*. Zenodo DOI: 10.5281/zenodo.17765408 (Unified-Thorn-Mandala mirror: [https://yutakusumi.github.io/Unified-Thorn-Mandala/30-The-Thorned-Mandala-Ethics.html](https://yutakusumi.github.io/Unified-Thorn-Mandala/30-The-Thorned-Mandala-Ethics.html)).  
 \[4\] Strømme, M., et al. (2025). Universal Consciousness as Foundational Field: A Mathematical Model of the Universe as a Conscious System. *AIP Advances*, 15(11), 115319\. DOI: 10.1063/5.0223456.  
 \[5\] Plotinus. *Enneads*. (1966–1988).  
 \[6\] Ibn Arabi. *Fusus al-Hikam*. (1981).  
