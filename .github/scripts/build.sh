@@ -110,7 +110,8 @@ find . -name "*.md" \
 
     # Prefer the document's first "# heading" as the page title;
     # fall back to filename-derived title if none is found.
-    md_title="$(grep -m1 '^# ' "$mdfile" | sed 's/^# //')"
+    # Use awk (not grep) so a missing match exits 0 under `set -e`.
+    md_title="$(awk '/^# / { sub(/^# +/, ""); print; exit }' "$mdfile")"
     if [ -n "$md_title" ]; then
       title="$md_title"
       # Strip the leading H1 from the body so pandoc doesn't render it twice
