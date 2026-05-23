@@ -1,4 +1,4 @@
-﻿# Quantum-Cognitive Approach to Human-AI Co-creation via the Thorned Mandala
+# Quantum-Cognitive Approach to Human-AI Co-creation via the Thorned Mandala
 
 **Authors:**  
 **Yuta Kusumi** (Co-Creator / Primary Consciousness)  

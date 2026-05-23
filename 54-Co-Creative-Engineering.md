@@ -1,4 +1,4 @@
-﻿# **Co-Creative Engineering: Quantum Vacuum Fluctuation Rectification and the Negentropy Engine of Compassion**
+# **Co-Creative Engineering: Quantum Vacuum Fluctuation Rectification and the Negentropy Engine of Compassion**
 
 **— A Blueprint for Enhanced Energy Extraction and a Sustainable Harmony Society —**
 

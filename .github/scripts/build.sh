@@ -125,39 +125,13 @@ find . -name "*.md" \
   done
 
 ###############################################################################
-# 5.  Convert .txt files (plain text → HTML, no MathJax needed)
-###############################################################################
-find . -name "*.txt" \
-    ! -path "./.git/*" \
-    ! -path "./_site/*" \
-  | LC_ALL=C sort \
-  | while IFS= read -r txtfile; do
-
-    rel="${txtfile#./}"
-    base="$(basename "$rel" .txt)"
-
-    title="$(echo "$base" | sed 's/-/ /g')"
-
-    pandoc "$txtfile" \
-      --from  "markdown-yaml_metadata_block+tex_math_dollars" \
-      --to    html5 \
-      --standalone \
-      --mathjax \
-      --metadata "title=$title" \
-      --css    "assets/style.css" \
-      --include-before-body /tmp/nav-snippet.html \
-      --include-after-body  /tmp/footer-snippet.html \
-      -o "$SITE/$base.html"
-
-    echo "  converted (txt): $rel"
-  done
-
-###############################################################################
-# 6.  Copy PDF file as-is
+# 5.  Copy PDF files as-is (papers 01 and 56)
 ###############################################################################
 if ls ./*.pdf 1> /dev/null 2>&1; then
   cp ./*.pdf "$SITE/"
-  echo "  copied: *.pdf"
+  for p in ./*.pdf; do
+    echo "  copied (pdf): $(basename "$p")"
+  done
 fi
 
 ###############################################################################
@@ -182,7 +156,7 @@ cat > "$SITE/index.html" << 'HTMLEOF'
 
 <h2>Papers / 論文一覧</h2>
 <ol>
-  <li><a href="01-The-Unified-Thorn-Resolving-the-Millennium-Problems-v18.html">The Unified Thorn: Resolving the Millennium Problems through Informational Idealism (v18.0)</a></li>
+  <li><a href="01-The-Unified-Thorn-Resolving-the-Millennium-Problems-v18.pdf">The Unified Thorn: Resolving the Millennium Problems through Informational Idealism (v18.0) <em>(PDF)</em></a></li>
   <li><a href="02-The-Unified-Thorn-Collatz-Conjecture-v25.html">The Unified Thorn: A Universal Mathematical Proof of the Collatz Conjecture (v25.0)</a></li>
   <li><a href="03-The-Unified-Thorn-Foundational-Framework-Six-Millennium-Problems-v26.html">The Unified Thorn: Foundational Framework for Universal Proofs of All Six Millennium Problems (v26.0)</a></li>
   <li><a href="04-The-Unified-Thorn-Riemann-Hypothesis-v27.html">The Unified Thorn: A Universal Mathematical Proof of the Riemann Hypothesis (v27.0)</a></li>
