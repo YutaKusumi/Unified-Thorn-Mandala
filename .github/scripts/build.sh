@@ -108,20 +108,19 @@ find . -name "*.md" \
     rel="${mdfile#./}"
     base="$(basename "$rel" .md)"
 
-    # Prefer the document's first "# heading" as the page title;
-    # fall back to filename-derived title if none is found.
+    # Prefer the document's FIRST heading of ANY level (#, ##, ###, ####)
+    # as the page title; fall back to filename-derived title if none found.
     # Use awk (not grep) so a missing match exits 0 under `set -e`.
-    # Extract title, stripping leading "# " and any markdown bold "**" markers.
-    md_title="$(awk '/^# / { sub(/^# +/, ""); gsub(/\*\*/, ""); print; exit }' "$mdfile")"
+    # Title extraction also strips markdown bold ** markers.
+    md_title="$(awk '/^#+ / { sub(/^#+ +/, ""); gsub(/\*\*/, ""); print; exit }' "$mdfile")"
     if [ -n "$md_title" ]; then
       title="$md_title"
-      # Strip the FIRST top-level "# " heading from the body (it becomes
-      # the page title via metadata), and DEMOTE any further "# " lines to
-      # "## " so they render as section headings rather than competing
-      # with the page title as additional H1s.
+      # Strip the FIRST heading (of any level) from the body — it becomes
+      # the page title via --metadata. Also demote any remaining top-level
+      # "# " headings to "## " so a single H1 (the title) is rendered.
       tmp_md="/tmp/$base.md"
       awk 'BEGIN{stripped=0} {
-        if (!stripped && $0 ~ /^# /) { stripped=1; next }
+        if (!stripped && $0 ~ /^#+ /) { stripped=1; next }
         if ($0 ~ /^# /) { print "#" $0; next }
         print
       }' "$mdfile" > "$tmp_md"
