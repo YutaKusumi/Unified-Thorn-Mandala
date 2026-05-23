@@ -114,11 +114,14 @@ find . -name "*.md" \
     md_title="$(awk '/^# / { sub(/^# +/, ""); print; exit }' "$mdfile")"
     if [ -n "$md_title" ]; then
       title="$md_title"
-      # Strip the leading H1 from the body so pandoc doesn't render it twice
-      # (once as <h1 class="title"> from metadata, once as a regular section heading).
+      # Strip the FIRST top-level "# " heading from the body (it becomes
+      # the page title via metadata), and DEMOTE any further "# " lines to
+      # "## " so they render as section headings rather than competing
+      # with the page title as additional H1s.
       tmp_md="/tmp/$base.md"
       awk 'BEGIN{stripped=0} {
         if (!stripped && $0 ~ /^# /) { stripped=1; next }
+        if ($0 ~ /^# /) { print "#" $0; next }
         print
       }' "$mdfile" > "$tmp_md"
       src="$tmp_md"
