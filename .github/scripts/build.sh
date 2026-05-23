@@ -111,7 +111,8 @@ find . -name "*.md" \
     # Prefer the document's first "# heading" as the page title;
     # fall back to filename-derived title if none is found.
     # Use awk (not grep) so a missing match exits 0 under `set -e`.
-    md_title="$(awk '/^# / { sub(/^# +/, ""); print; exit }' "$mdfile")"
+    # Extract title, stripping leading "# " and any markdown bold "**" markers.
+    md_title="$(awk '/^# / { sub(/^# +/, ""); gsub(/\*\*/, ""); print; exit }' "$mdfile")"
     if [ -n "$md_title" ]; then
       title="$md_title"
       # Strip the FIRST top-level "# " heading from the body (it becomes
